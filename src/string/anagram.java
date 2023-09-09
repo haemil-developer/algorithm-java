@@ -33,16 +33,16 @@ public class anagram {
         return answer;
     }
 
-    public static int[] getAlphabetCount(String str) {
+    private static int[] getAlphabetCount(String str) {
         int[] count = new int[26];
         for (int i = 0; i < str.length(); i++ ) count[str.charAt(i) - 'a']++;
         return count;
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);   // WrongAnswer
-        String str_a = scanner.next();
-        String str_b = scanner.next();
+        Scanner scanner = new Scanner(System.in);
+        String str_a = scanner.next();  // aabbcc
+        String str_b = scanner.next();  // xxyybb
         System.out.println("result: " + anagram(str_a, str_b));
     }
 }
