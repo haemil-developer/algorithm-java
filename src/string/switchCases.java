@@ -43,10 +43,20 @@ public class switchCases {
         return result;
     }
 
+    private static  String switchCases_v3(String str) {
+        String answer = "";
+        for (char ch : str.toCharArray()) {
+            if (Character.isLowerCase(ch)) answer += String.valueOf(Character.toUpperCase(ch));
+            if (Character.isUpperCase(ch)) answer += String.valueOf(Character.toLowerCase(ch));
+        }
+        return answer;
+    }
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);   // WrongAnswer
+        Scanner scanner = new Scanner(System.in);   // WrongAnswe
         String str = scanner.next();
         System.out.println("result v1: " + switchCases_v1(str));
         System.out.println("result v2: " + switchCases_v2(str));
+        System.out.println("result v3: " + switchCases_v3(str));
     }
 }
