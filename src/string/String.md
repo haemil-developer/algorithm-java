@@ -22,8 +22,10 @@ System.out.println(str);
 
 - 값의 변경은 불가능 하지만, 새 String을 만들어 바꿀 수 있다.
 ```
+// stored in Java Heap > constant String pool
 String str_literal1 = "test";
 String str_literal2 = "test";
+// stored in Java Heap
 Stirng str_object1 = new String("test");
 String str_object2 = new String("test");
 
