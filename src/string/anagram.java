@@ -7,7 +7,6 @@ import java.util.Scanner;
     애너그램: 단어의 구성(알파벳과 그 개수)이 완전히 같은 단어
  **/
 public class anagram {
-
     private static int anagram(String str_a, String str_b) {
         /*
         int[] countA = new int[26];

@@ -12,7 +12,6 @@ import java.util.Scanner;
  * 3-2. 단어와 매치되지 않았다면 다음 글자에서 2를 반복한다.
  */
 public class searchDocs {
-
     public static int searchDocs_ver1(String doc, String word) {
         int count = 0;
         int startIndex = 0;
