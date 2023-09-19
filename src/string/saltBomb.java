@@ -1,7 +1,6 @@
 package string;
 
 import java.util.Scanner;
-import java.util.regex.Pattern;
 
 /**
  * Q. 첫째 줄에는 현재 시작이 hh:mm:ss로 주어진다. 시간의 경우 0<=h<=23이며, 분과 초는 각각 0<=m<=59이다.
